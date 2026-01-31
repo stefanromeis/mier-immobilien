@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Properties from '../components/Properties';
+import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+---
+
+<Layout title="Mier Immobilien - Ihr Traumhaus wartet">
+  <Header client:load />
+  <Hero client:visible />
+  <Properties client:visible />
+  <Services client:visible />
+  <Testimonials client:visible />
+  <Contact client:visible />
+  <Footer client:visible />
+</Layout>
