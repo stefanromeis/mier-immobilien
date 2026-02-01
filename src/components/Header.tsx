@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Logo from './Logo';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -6,11 +7,11 @@ export default function Header() {
   return (
     <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold text-gray-900">
-              <span className="text-primary-600">Mier</span> Immobilien
+          <div>
+            <a href="/" className="text-2xl font-bold text-gray-900 flex items-center h-full">
+              <Logo />
             </a>
           </div>
 
